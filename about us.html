@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Planetary Wonders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 30px;
+            background: rgba(31, 30, 30, 0.85);
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.06);
+        }
+        h1 {
+            font-size: 42px;
+            color: #ffcc00;
+            /* text-shadow: 0 0 15px rgba(255, 255, 255, 0.9); */
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+        .planet-animation {
+            width: 120px;
+            height: 120px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/2/25/Mars_Earth_Comparison.png') no-repeat center/cover;
+            border-radius: 50%;
+            position: absolute;
+            top: 10%;
+            left: -120px;
+            animation: movePlanet 12s linear infinite;
+        }
+        @keyframes movePlanet {
+            0% { left: -120px; transform: rotate(0deg); }
+            100% { left: 110%; transform: rotate(360deg); }
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: white;
+            background: #6ab32f;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #ff9900;
+        }
+        .social-media {
+            margin-top: 40px;
+        }
+        .social-media a {
+            display: inline-block;
+            margin: 0 10px;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease;
+        }
+        .social-media a:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        .social-media img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="planet-animation"></div>
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Welcome to <strong>StarVibe</strong>, your gateway to the fascinating universe of planets! Our mission is to provide in-depth knowledge, stunning visuals, and engaging content about the celestial bodies that make up our solar system and beyond.</p>
+        <p>We are a team of passionate astronomers, space enthusiasts, and educators who love sharing the wonders of space with the world. Whether you're an aspiring astronaut, a student, or just someone curious about the cosmos, our website is your go-to resource for all things planetary.</p>
+        <p>Join us on this interstellar journey as we explore the mysteries of planets, moons, and the vast expanse of the universe. Let’s embark on this adventure together!</p>
+        <a href="#" class="button">Explore More</a>
+        <!-- <div class="social-media">
+            <a href="https://www.facebook.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Facebook_Logo_2023.png" alt=""></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_2023.png" alt="Twitter"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/LinkedIn_logo.png" alt="LinkedIn"></a>
+        </div> -->
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const container = document.querySelector(".container");
+            container.addEventListener("mouseover", function() {
+                container.style.boxShadow = "0 0 35px rgba(255, 255, 255, 0.6)";
+            });
+            container.addEventListener("mouseout", function() {
+                container.style.boxShadow = "0 0 25px rgba(255, 255, 255, 0.4)";
+            });
+        });
+    </script>
+</body>
+</html>

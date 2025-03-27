@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolution of Earth</title>
+
+    <!-- Evolution of earth page  -->
+     
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            text-align: center;
+            color: white;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: rgb(43, 38, 38);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: rgba(54, 46, 46, 0.95);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            color: #333;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #edeff3;
+            font-size: 32px;
+        }
+
+        p {
+            color: #f5efef;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .btn {
+            background: #e74c3c;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 18px;
+            transition: background 0.3s ease, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: #c0392b;
+            transform: scale(1.05);
+        }
+
+        ul {
+            text-align: left;
+            padding: 0;
+            list-style: none;
+            font-size: 16px;
+        }
+
+        ul li {
+            background: #f8f9fa;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 6px;
+            color: #333;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        ul li::before {
+            content: "\2728";
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .image {
+            width: 60%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            background-color: #ddd;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Evolution of Earth</h1>
+        <img src="/earth.png" alt="Evolution of Earth" class="image">
+        <p>The Earth has undergone significant transformations over billions of years, from a fiery ball of rock to the
+            lush and diverse planet we know today.</p>
+        <button class="btn" onclick="toggleFacts()">Show Evolution Stages</button>
+        <div id="evolution-stages" class="hidden">
+            <h2>Key Evolution Stages</h2>
+            <ul>
+                <li><b>4.6 Billion Years Ago</b> - Formation of the Earth from cosmic dust and gas.</li>
+                <li><b>4 Billion Years Ago</b> - Cooling of Earth's crust and formation of oceans.</li>
+                <li><b>3.5 Billion Years Ago</b> - First simple life forms (microorganisms) appear.</li>
+                <li><b>2.4 Billion Years Ago</b> - Great Oxygenation Event due to cyanobacteria photosynthesis.</li>
+                <li><b>600 Million Years Ago</b> - Multicellular life begins to evolve.</li>
+                <li><b>250 Million Years Ago</b> - Rise of dinosaurs during the Mesozoic Era.</li>
+                <li><b>66 Million Years Ago</b> - Mass extinction event, paving the way for mammals.</li>
+                <li><b>200,000 Years Ago</b> - Emergence of modern humans.</li>
+            </ul>
+        </div>
+        <div class="footer">&copy; 2025 Evolution of Earth | All Rights Reserved</div>
+    </div>
+
+    <script>
+        function toggleFacts() {
+            var facts = document.getElementById("evolution-stages");
+            facts.classList.toggle("hidden");
+        }
+    </script>
+</body>
+
+</html>

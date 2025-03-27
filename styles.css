@@ -1,0 +1,235 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+header {
+    padding: 20px;
+    background: linear-gradient(to right, darkblue, black);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    margin-top: 115px;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 75px;
+}
+
+.menu{
+    /* display: flex; */
+    /* align-items: center; */
+
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 79px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(250, 252, 250);
+    font-family: Arial,;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.login{
+    margin-left: 1000px;
+}
+
+ul li a:hover{
+    color: #ff200f;
+    
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    font-family: Arial,;
+}
+
+/* planets boxes */
+
+#solar-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.planet {
+    width: 320px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.planet img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.saturn{
+    height: 49vh;
+}
+
+.sun{
+    height: 49vh;
+}
+
+.planet:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.5);
+}
+
+/* buttons section */
+
+.sun-btn {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, ;
+    
+}
+
+.planet a{
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, ;
+}
+
+.m-btn {
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, ;
+    background-color:transparent;
+    text-decoration: none;
+    color: #ffffff00;
+}
+
+#venus-btn {
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, ;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+#earth-btn{
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, ;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+#mars-btn{
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, ;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+#jupiter-btn{
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, ;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+#saturn-btn{
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, ;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+#uranus-btn{
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, ;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+#neptune-btn{
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, ;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+/* detail of planets */
+
+.m-detail img{
+    width: 200px;
+    height: 150px;
+}
+/* footer {
+    padding: 20px;
+    background: linear-gradient(to right, black, darkblue);
+    margin-top: 20px;
+    font-size: 0.9em;
+    opacity: 0.7;
+} */
+
+
+

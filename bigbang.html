@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Bang Theory</title>
+
+    <!-- bigbang theory page  -->
+     
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            text-align: center;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #7c6b6b;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(43, 41, 41, 0.959);
+            color: #333;
+        }
+        h1 {
+            color: #03f123de;
+        }
+        p {
+            color: #130404;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+        .hidden {
+            display: none;
+        }
+        .btn {
+            background: #ff9800;
+            color: white;
+            padding: 12px 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #e68900;
+        }
+        ul {
+            text-align: left;
+            padding: 0;
+            list-style: none;
+            font-size: 16px;
+        }
+        ul li {
+            background: #f4f4f4;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 6px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Big Bang Theory</h1>
+        <p>The Big Bang Theory is the leading explanation for how the universe began. It suggests that the universe was once a singularity that expanded rapidly, giving birth to space and time.</p>
+        <button class="btn" onclick="toggleFacts()">Show More Facts</button>
+        <div id="more-facts" class="hidden">
+            <h2>Interesting Facts</h2>
+            <ul>
+                <li>The universe is approximately 13.8 billion years old.</li>
+                <li>Cosmic Microwave Background radiation provides strong evidence of the Big Bang.</li>
+                <li>The universe continues to expand at an accelerating rate due to dark energy.</li>
+                <li>Galaxies are moving away from each other, as observed by redshift in light.</li>
+                <li>The Big Bang was not an explosion but an expansion of space itself.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        function toggleFacts() {
+            var facts = document.getElementById("more-facts");
+            facts.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
